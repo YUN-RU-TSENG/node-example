@@ -1,5 +1,5 @@
 // 返回 / 和 /user dummy html
-// 針對 / 上的 form，處裏 /create-user 以及打印結果
+// 針對 / 上的 form，處理 /create-user 以及打印結果
 const users = ['Amy', 'Tom', 'John']
 
 function handleRoute(request, response) {
