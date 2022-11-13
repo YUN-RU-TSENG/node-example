@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    background-color: lightgreen;
+}
+
+a {
+    padding: 12px;
+    color: seagreen;
+}
+
+a:hover {
+    background-color: lightyellow;
+}
