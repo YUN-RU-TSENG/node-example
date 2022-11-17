@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+        h2 User Page
+        nav
+            a(href="/") home | 
+            a(href="/user") user
+        form(action="/add-user", method="POST")
+            label(for="user-name") user name
+            input(type="text",name="user",required,id="user-name")
+            button add user
+        ul
+            each user in users
+                li= '用戶名：' + user
+        p 目前共有 #{users.length} 名用戶
