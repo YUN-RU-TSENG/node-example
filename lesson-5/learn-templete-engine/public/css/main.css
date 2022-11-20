@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app-nav {
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: end;
+}
+
+.app-nav a {
+    padding: 12px;
+}
+
+.app-nav a:checked,
+.app-nav a:visited,
+.app a {
+    color: white;
+}
+
+.app-container {
+    width: 768px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.app-block {
+    text-align: center;
+    background-color: lightseagreen;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.app-block p {
+    color: lightgoldenrodyellow;
+    padding: 100px 0px;
+    font-size: 40px;
+    font-weight: 700;
+}
