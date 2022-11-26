@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/reset.css")
+        link(rel="stylesheet", href="/css/admin.css")
+        title Admin
+    body
+        div.admin-wrapper
+            h2.admin-title 後台商品頁
+            form.admin-add(action="admin/product", method="get")
+                button 新增商品
+            ul.admin-list
+                each product in products
+                    li.admin-list-item
+                        div(style='background-image: url(' + product.image + ')')
+                        p 商品名稱 #{product.name}
+                        p 商品 ID #{product.id}
+                        form(action="/admin/delete-product", method="post")
+                            input(type="hidden", name="id", value=product.id)
+                            button 刪除
+                        form(action="/admin/product", method="get")
+                            input(type="hidden", name="id", value=product.id)
+                            button 修改

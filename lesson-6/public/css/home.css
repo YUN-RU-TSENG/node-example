@@ -1,0 +1,60 @@
+.home-navbar {
+    display: flex;
+    justify-content: end;
+    padding: 4px 0px;
+
+    background-color: lightskyblue;
+}
+
+.home-navbar a,
+.home-navbar a:active,
+.home-navbar a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 4px 12px;
+}
+
+.home-wrapper {
+    padding-top: 48px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.home-title {
+    margin-bottom: 12px;
+}
+
+.home-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+.home-list-item {
+    display: block;
+    flex: 0 1 20%;
+}
+
+.home-list-item div {
+    height: 120px;
+    margin-bottom: 4px;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.home-list-item h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 4px 4px;
+
+    color: gray;
+}
+
+.home-list-item button {
+    background-color: royalblue;
+    color: white;
+    font-size: 16px;
+    margin-left: 4px;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
