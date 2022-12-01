@@ -1,0 +1,31 @@
+.admin-product-wrapper {
+    padding-top: 48px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.admin-product-title {
+    margin-bottom: 12px;
+}
+
+.admin-product-form {
+    margin-bottom: 12px;
+}
+
+.admin-product-form button {
+    width: 100%;
+    background-color: royalblue;
+    color: white;
+    font-size: 16px;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.admin-product-form label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.admin-product-form input {
+    margin-left: 4px;
+}

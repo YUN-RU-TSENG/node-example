@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/reset.css")
+        link(rel="stylesheet", href="/css/admin-product.css")
+        if isEdit
+            title AdminProduct - edit
+        else
+            title AdminProduct - add
+    body
+        div.admin-product-wrapper
+            h2.admin-product-title 後台商品頁
+            //- 修改商品
+            if isEdit
+                form.admin-product-form(action="/admin/update-product" ,method="post")
+                    p 修改商品
+                    label(for="") 商品名稱
+                        input(type="text", name="name")
+                    label(for="") 圖片連結
+                        input(type="text", name="image")
+                    input(type="hidden", name="id", value=id)
+                    button 修改商品
+            //- 新增商品
+            else
+                form.admin-product-form(action="/admin/add-product", method="post")
+                    p 新增商品
+                    label(for="") 商品名稱
+                        input(type="text", name="name")
+                    label(for="") 圖片連結
+                        input(type="text", name="image")
+                    button 新增商品

@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/reset.css")
+        link(rel="stylesheet", href="/css/cart.css")
+        title Cart
+    body
+        nav.cart-navbar
+            a(href="/") 商品頁
+        div.cart-wrapper
+            h2.cart-title 購物車
+            ul.cart-list
+                for cart in carts
+                    li.cart-list-item
+                        p 商品 id #{cart.id}
+                        p 數量 #{cart.quantity} 個
+                        form(action="/delete-product-of-cart", method="post")
+                            input(type="hidden", name="id", value=cart.id)
+                            button 刪除商品
