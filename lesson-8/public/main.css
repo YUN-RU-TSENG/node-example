@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+li {
+    display: block;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: rgb(252, 252, 252);
+}
+
+label {
+    display: inline-block;
+}

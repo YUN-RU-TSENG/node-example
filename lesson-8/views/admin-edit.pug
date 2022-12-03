@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="/main.css")
+    body
+        h2 admin
+        form(action="/admin/update-product", method="post", class="inline-block")
+            input(type="hidden", name="id", value=product.id)
+            label(for="") name
+                input(type="text",name="name",require,value=product.name)
+            label(for="") image
+                input(type="text",name="image",require,value=product.image)
+            button Update
